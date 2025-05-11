@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Slider 3D -->
+<section class="slider-3d-container">
+    <div class="slider-3d-track">
+        <!-- Slide 1 -->
+        <div class="slide-3d active" style="background-image: url('/img/slider/panoramica1.jpg');">
+            <div class="slide-content">
+                <h2>Hosting Premium</h2>
+                <p>99.9% Uptime Garantizado</p>
+            </div>
+            <div class="slide-reflection"></div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide-3d" style="background-image: url('/img/slider/panoramica2.jpg');">
+            <div class="slide-content">
+                <h2>Plugins Custom</h2>
+                <p>Desarrollo a Medida</p>
+            </div>
+            <div class="slide-reflection"></div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide-3d" style="background-image: url('/img/slider/panoramica3.jpg');">
+            <div class="slide-content">
+                <h2>Soporte 24/7</h2>
+                <p>Asistencia Inmediata</p>
+            </div>
+            <div class="slide-reflection"></div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide-3d" style="background-image: url('/img/slider/panoramica4.jpg');">
+            <div class="slide-content">
+                <h2>Comunidades Activas</h2>
+                <p>+500 servidores activos</p>
+            </div>
+            <div class="slide-reflection"></div>
+        </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="slider-3d-prev">‹</button>
+    <button class="slider-3d-next">›</button>
+    <div class="slider-3d-dots"></div>
+</section><!-- Demo Interactiva -->
+<section class="demo-section">
+    <div class="demo-container">
+        <!-- Demo Minecraft -->
+        <div class="demo-panel">
+            <div class="demo-header">
+                <div class="demo-buttons">
+                    <div class="demo-btn red"></div>
+                    <div class="demo-btn yellow"></div>
+                    <div class="demo-btn green"></div>
+                </div>
+                <div class="demo-title">minecraft-demo.js</div>
+            </div>
+            <div class="demo-content minecraft-demo">
+                <div class="demo-overlay">
+                    <h3>Servidor Premium</h3>
+                    <button class="demo-action-btn">Ver Especificaciones</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Discord -->
+        <div class="demo-panel">
+            <div class="demo-header">
+                <div class="demo-buttons">
+                    <div class="demo-btn red"></div>
+                    <div class="demo-btn yellow"></div>
+                    <div class="demo-btn green"></div>
+                </div>
+                <div class="demo-title">discord-bot.ts</div>
+            </div>
+            <div class="demo-content discord-demo">
+                <div class="demo-overlay">
+                    <h3>Bot Personalizado</h3>
+                    <button class="demo-action-btn">Probar Comandos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-controls text-center">
+        <a asp-controller="Minecraft" asp-action="Index" class="demo-cta">Explorar Minecraft</a>
+        <a asp-controller="Discord" asp-action="Index" class="demo-cta">Ver Discord</a>
+    </div>
+</section>
+
+<!-- Sección de características (opcional) -->
+<section class="features">
+    <div class="text-center">
+        <h2>Nuestros Servicios</h2>
+        <div class="features-grid">
+            <!-- Añade tus características aquí -->
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.documentElement.classList.add('js-loaded');
+        // El código del slider que te proporcioné arriba
+    });
+</script>
